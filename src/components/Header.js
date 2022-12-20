@@ -9,6 +9,8 @@ import {
 } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 
+//FIGURE OUT HOW TO LINK TO OTHER PAGES WITHOUT RELOADING USING ROUTER AND NOT HREF....
+
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     return (

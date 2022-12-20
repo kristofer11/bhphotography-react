@@ -16,3 +16,25 @@
     font-weight: bold;
 }
 
+
+
+#homeCard {
+  aspect-ratio: 1 / 1;
+  background-color: #cbdbd9;
+  min-height: 23vw;
+  color: white;
+  border: 5px solid #cbdbd9;
+  border-radius: 5%;
+  box-shadow: 6px 4px 4px #20494d;
+}
+
+.homeCardImgOverlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-img {
+  aspect-ratio: 1/1;
+  border-radius: 4.5% !important;
+}
