@@ -1,4 +1,5 @@
 import { Card, CardImg, CardImgOverlay, CardTitle, Row, Col } from 'reactstrap';
+import { NavLink } from 'react-router-dom';
 
 //FIGURE OUT HOW TO LINK TO OTHER PAGES WITHOUT RELOADING USING ROUTER AND NOT HREF....
 
@@ -6,7 +7,7 @@ const HomePageLink = ({ alt, img, title, path }) => {
     return (
         <>
             <Col md='4'>
-                <a href={path}>
+                <NavLink to={path}>
                     <Card
                         inverse
                         id='homeCard'
@@ -22,7 +23,7 @@ const HomePageLink = ({ alt, img, title, path }) => {
                         </CardImgOverlay>
 
                     </Card>
-                </a>
+                </NavLink>
             </Col>
 
 

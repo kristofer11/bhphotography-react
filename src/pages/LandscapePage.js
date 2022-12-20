@@ -1,8 +1,8 @@
-
 const LandscapePage = () => {
   return (
     <>
-      <h1>Landscape</h1>    
+      <h1>Landscape</h1>  
+
     </>
   )
 }

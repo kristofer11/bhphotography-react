@@ -1,6 +1,7 @@
 import { Container, Row } from 'reactstrap';
+import FeaturedVideo from '../components/FeaturedVideo';
 import HomeVid from '../app/video/home-vid.mp4';
-import Poster from '../app/img/coast-looking-in16x9.JPG'
+import HomePagePoster from '../app/img/coast-looking-in16x9.JPG'
 import HomePageLink from '../components/HomePageLink';
 import CanonBeachSq from '../app/img/haystack-sq.jpg';
 import LookingAtLake from '../app/img/bh-looking-at-lake.jpg'
@@ -8,10 +9,7 @@ import LookingAtLake from '../app/img/bh-looking-at-lake.jpg'
 const HomePage = () => {
   return (
     <>
-      <Container>
-        {/* Should I make a "main video" component that can be used on "landscapes" and "drone" that would use a prop to grab the specific video? */}
-        <video className='mt-2' src={HomeVid} width='100%' autoPlay muted playsInline loop poster={Poster}></video>
-      </Container>
+      <FeaturedVideo video={HomeVid} poster={HomePagePoster} />
       <Container>
         <h1>Brittany Herzog Photography</h1>
         <p><em><strong>Welcome to the official home of Brittany Herzog Photography</strong></em>. </p>
