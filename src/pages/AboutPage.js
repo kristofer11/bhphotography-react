@@ -2,6 +2,7 @@ import { Container, Row, Col } from 'reactstrap';
 import AboutMainImg from '../app/img/brit-and-jake.jpg';
 import { useState, useEffect } from 'react';
 import { useSpring, animated } from 'react-spring';
+import ContactForm from '../components/ContactForm';
 
 const AboutPage = () => {
   const [toggle, setToggle] = useState(false);
@@ -24,9 +25,16 @@ const AboutPage = () => {
             <animated.div style={animatedStyle}>
                 <img width='100%' src={AboutMainImg}/>              
             </animated.div>
-
         </Row>
-        <div style={{color: 'blue', backgroundColor: 'pink', padding: '5px', margin: '5px'}}>ADD A CONTACT FORM HERE USING FORMIK. AND DELETE THIS DIV.</div>
+        <Row>
+            <h2 className='text-center mt-2'>Contact</h2>
+        </Row>
+        <hr />
+        <Row>
+            <p>Whether it is to book a session or inquire about purchasing an image, I would love to hear from you! Please fill out the form to get in touch.</p>
+        </Row>
+        <hr />
+        <ContactForm />
     </Container>
   )
 }
