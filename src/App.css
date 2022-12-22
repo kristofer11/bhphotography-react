@@ -1,3 +1,9 @@
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .navbar {
   background-color: #cbdbd988;
 }
@@ -9,14 +15,18 @@
   color: #bc4416;
 }
 
+.navbar-brand:hover {
+  transform: scale(1.1);
+  background-color:#cbdbd988;
+  border-radius: 5%;
+}
+
 .navbar-nav 
 .nav-item 
 .nav-link{
     color: #20494d; 
     font-weight: bold;
 }
-
-
 
 #homeCard {
   aspect-ratio: 1 / 1;
@@ -37,4 +47,21 @@
 .card-img {
   aspect-ratio: 1/1;
   border-radius: 4.5% !important;
+}
+
+.site-footer {
+  width: 100%;
+  margin-top: auto;
+}
+
+#homeCard:hover {
+  transform: scale(1.034);
+  border-color: #20494d;
+  background-color: #20494d;
+  color: #20494d;
+}
+
+#homeCard .homeCardImgOverlay:hover {
+  color: #20494d;
+  background-color:#cbdbd988
 }

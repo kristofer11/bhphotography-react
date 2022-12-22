@@ -6,7 +6,7 @@ import DronePagePoster from '../app/img/mountain-drone-poster.png'
 const DronePage = () => {
   return (
     <Container>
-        <h1>Drone Video</h1>
+        <h1 className='text-center'>Drone Video</h1>
         <FeaturedVideo video={MainDroneVideo} poster={DronePagePoster}/>
     </Container>
   )

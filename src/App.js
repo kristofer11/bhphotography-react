@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from './components/Header'
+import Header from './components/Header';
+import Footer from './components/Footer';
 import { Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage'
 import LandscapePage from './pages/LandscapePage';
@@ -17,6 +18,7 @@ function App() {
           <Route path='/drone' element={<DronePage/>}/>  
           <Route path='/about' element={<AboutPage/>}/>          
       </Routes>
+      <Footer />
     </div>
   );
 }
