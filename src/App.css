@@ -2,14 +2,16 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+  font-family: 'Varela Round', sans-serif;
 }
 
 .navbar {
   background-color: #cbdbd988;
+  padding-inline: 5em;
 }
 
 .navbar-brand h1 {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Dancing Script', cursive;  
   font-size: 1.88rem;
   font-weight: 900;
   color: #bc4416;
@@ -36,6 +38,7 @@
   border: 5px solid #cbdbd9;
   border-radius: 5%;
   box-shadow: 6px 4px 4px #20494d;
+  overflow: hidden;
 }
 
 .homeCardImgOverlay {
@@ -64,4 +67,11 @@
 #homeCard .homeCardImgOverlay:hover {
   color: #20494d;
   background-color:#cbdbd988
+}
+
+.galleryImg {
+  border: 2px solid #cbdbd9;
+  margin-bottom: 8px;
+  border-radius: 2%;
+  box-shadow: 6px 4px 4px #20494d;
 }

@@ -14,14 +14,14 @@ import { NavLink } from 'react-router-dom';
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     return (
-        <Navbar light sticky='top' expand='md'>
-            <NavbarBrand href='/' className='ms-5'>
+        <Navbar light sticky='top' expand='md' className='p-md-1'>
+            <NavbarBrand href='/' className='mr-sm-5 col-2'>
                 <h1>Brittany Herzog</h1>
                 <h1>Photography</h1>
             </NavbarBrand>
             <NavbarToggler onClick={() => setMenuOpen(!menuOpen)}/>
             <Collapse isOpen={menuOpen} navbar>
-                <Nav className='ms-auto' navbar>
+                <Nav className='ms-md-auto' navbar>
                     <NavItem>
                         <NavLink className='nav-link' to='/'>
                             Home
