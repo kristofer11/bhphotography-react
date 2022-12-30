@@ -14,7 +14,7 @@ import { NavLink } from 'react-router-dom';
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     return (
-        <Navbar light sticky='top' expand='md' className='p-md-1'>
+        <Navbar light sticky='top' expand='md' className='d-flex justify-content-center'>
             <NavbarBrand href='/' className='mr-sm-5 col-2'>
                 <h1>Brittany Herzog</h1>
                 <h1>Photography</h1>
@@ -38,7 +38,7 @@ const Header = () => {
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className='nav-link' to='about'>
+                        <NavLink className='nav-link' to='/about'>
                             About Me
                         </NavLink>
                     </NavItem>

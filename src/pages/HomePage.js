@@ -4,7 +4,8 @@ import HomeVid from '../app/video/home-vid.mp4';
 import HomePagePoster from '../app/img/coast-looking-in16x9.JPG'
 import HomePageLink from '../components/HomePageLink';
 import CanonBeachSq from '../app/img/haystack-sq.jpg';
-import LookingAtLake from '../app/img/bh-looking-at-lake.jpg'
+import LookingAtLake from '../app/img/bh-looking-at-lake.jpg';
+import IndianBeach from '../app/img/indian-beach-vid-sq.png';
 import AnimatedHomePageLink from '../components/AnimatedHomePageLink';
 
 const HomePage = () => {
@@ -38,8 +39,8 @@ const HomePage = () => {
               <AnimatedHomePageLink
                 alt='Canon beach photo'
                 title='Landscapes'
-                img={CanonBeachSq}
-                path='/drone'
+                img={IndianBeach}
+                path='/landscape'
               />          
           </Col>
         </Row>

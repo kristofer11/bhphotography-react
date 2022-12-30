@@ -1,9 +1,13 @@
-import { Container } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 
 const FeaturedVideo = ({ video, poster }) => {
   return (
     <Container>
-        <video className='mt-2' src={video} width='100%' autoPlay muted playsInline loop poster={poster}></video>
+      <Row className='justify-content-center'>
+        <Col xl='9'>
+                <video className='mt-2' src={video} width='100%' height='100%' autoPlay muted playsInline loop poster={poster}></video>
+        </Col>
+      </Row>
     </Container>   
   )
 }

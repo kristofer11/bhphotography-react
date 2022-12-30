@@ -1,7 +1,9 @@
 import { Container, Row, Col } from 'reactstrap';
 import LandscapeList from '../features/landscape/LandscapeList';
-import LandscapeMainImg from '../app/img/sunny-lake.jpg'
-
+import LandscapeMainImg from '../app/img/sunny-lake.jpg';
+import LandscapeModal from '../features/landscape/LandscapeModal';
+import { toggleModalDisplay } from '../features/landscape/landscapeSlice';
+import LandscapeCarousel from '../features/landscape/LandscapeCarousel';
 
 const LandscapePage = () => {
   return (
@@ -16,6 +18,7 @@ const LandscapePage = () => {
           </p>
         </Row>
         <LandscapeList />
+        {/* <button onClick={toggleModalDisplay()}></button> */}
       </Container>  
   )
 }
