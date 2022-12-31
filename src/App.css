@@ -9,6 +9,9 @@
   background-color: #cbdbd988;
 }
 
+.brand {
+  text-decoration: none;
+}
 
 /* FIGURE OUT HOW TO MAKE THIS MORE RESPONSIVE LIKE THE BOOTSTRAP VERSION */
 .container-fluid {
