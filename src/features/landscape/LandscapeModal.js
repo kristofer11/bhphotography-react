@@ -1,5 +1,3 @@
-import { Modal, ModalBody } from 'reactstrap';
-
 const LandscapeModal = ({ clickedImage, handleRotationRight, setClickedImage, handleRotationLeft }) => {
     const handleClick = (e) => {
         if (e.target.classList.contains('dismiss')) {

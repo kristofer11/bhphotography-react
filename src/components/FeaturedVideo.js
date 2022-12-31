@@ -5,7 +5,7 @@ const FeaturedVideo = ({ video, poster }) => {
     <Container>
       <Row className='justify-content-center'>
         <Col xl='9'>
-                <video className='mt-2' src={video} width='100%' height='100%' autoPlay muted playsInline loop poster={poster}></video>
+                <video className='my-2 featuredVideo' src={video} width='100%' height='100%' autoPlay muted playsInline loop poster={poster}></video>
         </Col>
       </Row>
     </Container>   

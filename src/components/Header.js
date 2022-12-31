@@ -5,7 +5,8 @@ import {
     Collapse,
     NavbarToggler,
     Nav,
-    NavItem
+    NavItem,
+    NavbarText
 } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 
@@ -14,10 +15,10 @@ import { NavLink } from 'react-router-dom';
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     return (
-        <Navbar light sticky='top' expand='md' className='d-flex justify-content-center'>
-            <NavbarBrand href='/' className='mr-sm-5 col-2'>
-                <h1>Brittany Herzog</h1>
-                <h1>Photography</h1>
+        <Navbar light sticky='top' expand='md' className='d-flex justify-content-center px-0 px-md-3 px-lg-5'>
+            <NavbarBrand href='/' className='mr-sm-5 col-2 ml-0'>
+                <h1 className='m-0' ><em>Brittany Herzog</em></h1>
+                <h1 className='mt-0'>Photography</h1>
             </NavbarBrand>
             <NavbarToggler onClick={() => setMenuOpen(!menuOpen)}/>
             <Collapse isOpen={menuOpen} navbar>

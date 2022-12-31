@@ -10,7 +10,7 @@ const LandscapeList = () => {
     const [clickedImage, setClickedImage] = useState(null);
     const [currentId, setCurrentId] = useState(null)
 
-    const handleClick = (item, id) => {
+    const handleClick = (item) => {
         setCurrentId(item.id);
         setClickedImage(item.image);
     };

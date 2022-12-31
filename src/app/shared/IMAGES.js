@@ -29,76 +29,71 @@ export const IMAGES = [
     },
     {
         id: 2,
-        image: britWithStumps,
-        description: 'Brittany with stumps, lake and mountian in background'
-    },
-    {
-        id: 3,
         image: cabin,
         description: 'Cabin next to river'
     },
     {
-        id: 4,
+        id: 3,
         image: coastLookingIn,
         description: 'Drone image of large rock on beach'
     },
     {
-        id: 5,
+        id: 4,
         image: cows,
         description: 'Cows in a field, mountain in background'
     },
     {
-        id: 6,
+        id: 5,
         image: fieldCloseup,
         description: 'Closeup of grassy field with mountain in background'
     },
     {
-        id: 7,
+        id: 6,
         image: heron,
         description: 'Blue heron'
     },
     {
-        id: 8,
+        id: 7,
         image: lavendar,
         description: 'Lavendar in a field'
     },
     {
-        id: 9,
+        id: 8,
         image: lighthouse,
         description: 'lighthouse'
     },
     {
-        id: 10,
+        id: 9,
         image: lodge,
         description: 'Lodge in the mountains'
     },
     {
-        id: 11,
+        id: 10,
         image: riverLog,
         description: 'Log in river'
     },
     {
-        id: 12,
+        id: 11,
         image: pinkFlowers,
         description: 'Pink flowers'
     },
     {
-        id: 13,
+        id: 12,
         image: rainbowWaterfall,
         description: 'Waterfall with rainbow'
     },
     {
-        id: 14,
+        id: 13,
         image: snowyMountain,
         description: 'Snowy, foggy mountain scene'
     },
     {
-        id: 15,
+        id: 14,
         image: sunnyLake,
         description: 'Sunny lake'
     },
     {
-        id: 16,
+        id: 15,
         image: stump,
         description: 'Old growth stump in a foggy forest'
     },

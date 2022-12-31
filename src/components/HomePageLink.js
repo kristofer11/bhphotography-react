@@ -18,7 +18,7 @@ const HomePageLink = ({ alt, img, title, path }) => {
                             src={img}
                         />
                         <CardImgOverlay className='homeCardImgOverlay'>
-                            <CardTitle tag='h3'>
+                            <CardTitle className='homeCardTitle' tag='h3'>
                                 {title}
                             </CardTitle>
                         </CardImgOverlay>

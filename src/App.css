@@ -15,27 +15,46 @@
   width: 80% !important;
 }
 
+.textContent {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
 .navbar-brand h1 {
-  font-family: 'Dancing Script', cursive;  
+  font-family: 'Kaushan Script', cursive;
   font-size: 1.88rem;
   font-weight: 900;
   color: #bc4416;
 }
 
+.britName {
+  color: #bc4416;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.greeting {
+  font-size: 2.5rem;
+}
+
 .navbar-brand:hover {
   transform: scale(1.1);
-  background-color:#cbdbd988;
   border-radius: 5%;
 }
 
-.navbar-nav 
-.nav-item 
-.nav-link{
-    color: #20494d; 
-    font-weight: bold;
+.navbar-nav .nav-item .nav-link {
+  color: #20494d;
+  font-weight: bold;
+  font-size: 1.25rem;
 }
 
-.landscapeModal{
+.pageTitle {
+  font-size: 3.5rem;
+  font-family: 'Varela Round', sans-serif;
+  color: #bc4416;
+  margin: 1rem
+}
+
+.landscapeModal {
   height: unset;
   max-height: fit-content;
   max-width: 63vw;
@@ -44,7 +63,7 @@
 .landscapeModal img {
   max-width: 100%;
   height: auto;
-  max-height: 100%;  
+  max-height: 100%;
 }
 
 #homeCard {
@@ -53,7 +72,7 @@
   min-height: 23vw;
   color: white;
   border: 5px solid #cbdbd9;
-  border-radius: 5%;
+  border-radius: 3%;
   box-shadow: 6px 4px 4px #20494d;
   overflow: hidden;
 }
@@ -64,9 +83,14 @@
   align-items: center;
 }
 
+#homeCardTitle {
+  background-color: rgba(0, 0, 0, .2);
+  font-size: 3vw;
+}
+
 .card-img {
   aspect-ratio: 1/1;
-  border-radius: 4.5% !important;
+  border-radius: 3px !important;
 }
 
 .site-footer {
@@ -83,7 +107,7 @@
 
 #homeCard .homeCardImgOverlay:hover {
   color: #20494d;
-  background-color:#cbdbd988
+  background-color: #cbdbd988
 }
 
 .galleryImg {
@@ -93,11 +117,99 @@
   box-shadow: 6px 4px 4px #20494d;
 }
 
+.mainAboutImg,
+.landscapeMain
+{
+  max-width: 100%;
+  box-shadow: 6px 4px 4px #20494d;
+}
+
+.featuredVideo,
+.drone-main-vid,
+#mainHomeVid 
+{
+  box-shadow: 6px 4px 4px #20494d;
+  max-width: 100%;
+  height: auto;
+}
+
+.droneThumbnail {
+  border: 2px solid #cbdbd9;
+  margin-bottom: 8px;
+  border-radius: 2%;
+  box-shadow: 6px 4px 4px #20494d;
+}
+
+.droneThumbnail:hover{
+  transform: scale(1.02);
+}
+
+.droneLink{
+  text-decoration: none;
+}
+.droneLink:hover {
+  opacity: .8;
+  cursor:pointer;
+}
+
+.droneModal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  width:fit-content !important;
+  background-color: black !important;
+}
+
+.droneModalBody {
+  width:fit-content;
+}
+
+.modalCloseButton {
+  cursor: pointer;
+  color: lightgray;
+  padding: 0;
+  margin: 0;
+}
+
+/* .droneContainer {
+  justify-content:center;
+} */
+
+/* .droneModal {
+  width: 900px;
+} */
+
+/* .modalVideo {
+  aspect-ratio: 16/9;
+  width: 90vw;
+  justify-self: center;
+  height: auto;
+} */
+
+.galleryImg:hover {
+  transform: scale(1.02);
+  border: 3px solid #20494d;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  #homeCardTitle {
+    font-size: 55px;
+  }
+
+  nav {
+    background-color: #cbdbd9;
+  }
+}
+
 /* .galleryRow {
   flex-direction: column
 } */
 
-/* Modal. "For those who code" was very helpful in styling this modal */
+/* Modal. "For those who code" on youtube was very helpful in styling this modal */
 .overlay {
   position: fixed;
   top: 0;
@@ -110,6 +222,7 @@
   align-items: center;
   z-index: 1022;
 }
+
 .overlay img {
   display: block;
   max-width: 100%;
@@ -118,7 +231,8 @@
   box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.5);
   z-index: 1000;
 }
-.overlay > span {
+
+.overlay>span {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -128,6 +242,7 @@
   cursor: pointer;
   z-index: 1000;
 }
+
 .overlay-arrows_left {
   display: flex;
   background-color: #6d6d6d97;
