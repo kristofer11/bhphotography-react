@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bhphotography-react/static/css/main.98c2692d.css",
-    "main.js": "/bhphotography-react/static/js/main.3bb46a3c.js",
+    "main.css": "/bhphotography-react/static/css/main.3116c979.css",
+    "main.js": "/bhphotography-react/static/js/main.5c7dcf63.js",
     "static/media/home-vid.mp4": "/bhphotography-react/static/media/home-vid.8dcfe758271d5fc538df.mp4",
     "static/media/drone-page-main-vid.mp4": "/bhphotography-react/static/media/drone-page-main-vid.c238613e77235e278074.mp4",
     "static/media/skykomish-vid.png": "/bhphotography-react/static/media/skykomish-vid.8987dbdbb6de965b932d.png",
@@ -61,11 +61,11 @@
     "static/media/open-sans-latin-400italic.woff2": "/bhphotography-react/static/media/open-sans-latin-400italic.bb915319f59c02c348a6.woff2",
     "index.html": "/bhphotography-react/index.html",
     "static/media/logo.svg": "/bhphotography-react/static/media/logo.b2e5a01e505f739f1484b881277d5186.svg",
-    "main.98c2692d.css.map": "/bhphotography-react/static/css/main.98c2692d.css.map",
-    "main.3bb46a3c.js.map": "/bhphotography-react/static/js/main.3bb46a3c.js.map"
+    "main.3116c979.css.map": "/bhphotography-react/static/css/main.3116c979.css.map",
+    "main.5c7dcf63.js.map": "/bhphotography-react/static/js/main.5c7dcf63.js.map"
   },
   "entrypoints": [
-    "static/css/main.98c2692d.css",
-    "static/js/main.3bb46a3c.js"
+    "static/css/main.3116c979.css",
+    "static/js/main.5c7dcf63.js"
   ]
 }
