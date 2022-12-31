@@ -59,7 +59,7 @@ const DronePage = (id) => {
       <div className='modalDiv'>
         {(currentVideoId != null) && (
           <Modal isOpen='true' className='droneModal'>
-            <span className='modalCloseButton' style={{ color: 'white' }} onClick={() => handleClose()}>X</span>            
+            <div className='closeButtonDiv'><span className='modalCloseButton' onClick={() => handleClose()}>⨂</span> </div>           
             <ModalBody className='droneModalBody'>
             <div class="embed-responsive embed-responsive-16by9">
               <iframe width="560" height="315" className='modalVideo' src={modalVideo} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -152,6 +152,12 @@
   cursor:pointer;
 }
 
+.modal-dialog.droneModal {
+  max-width: unset;
+  background: transparent;
+
+}
+
 .droneModal {
   display: flex;
   align-items: center;
@@ -159,19 +165,41 @@
 }
 
 .modal-content {
-  width:fit-content !important;
-  background-color: black !important;
+  width: 100%;
+  align-items: center;
+  height: max-content;
+  background-color: transparent !important;
+  border: unset !important;
+}
+
+.embed-responsive.embed-responsive-16by9 {
+  height: fit-content;
 }
 
 .droneModalBody {
   width:fit-content;
+  height: fit-content;
 }
 
 .modalCloseButton {
   cursor: pointer;
-  color: lightgray;
-  padding: 0;
+  color: #bc4416;
   margin: 0;
+  font-size: 2rem;
+}
+
+iframe.modalVideo {
+  max-width: 80vw;
+}
+
+.closeButtonDiv {
+  text-align: left;
+  width: 560px;
+  max-width: 80vw;
+}
+
+.closeButtonDiv:hover {
+  cursor: pointer;
 }
 
 /* .droneContainer {
