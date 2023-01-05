@@ -1,16 +1,16 @@
 import { Container, Row, Col } from 'reactstrap';
 import LandscapeList from '../features/landscape/LandscapeList';
 import LandscapeMainImg from '../app/img/sunny-lake.jpg';
-import LandscapeModal from '../features/landscape/LandscapeModal';
-import { toggleModalDisplay } from '../features/landscape/landscapeSlice';
-import LandscapeCarousel from '../features/landscape/LandscapeCarousel';
 
 const LandscapePage = () => {
   return (
       <Container>
         <h1 className='text-center pageTitle'>Landscape</h1>
         <Row className='justify-content-center'>
-            <img className='landscapeMain' src={LandscapeMainImg} />          
+          <Col className="text-center">
+             <img className='landscapeMain' src={LandscapeMainImg} />             
+          </Col>
+      
         </Row>
         <Row className='text-center'>
           <p className='textContent'>

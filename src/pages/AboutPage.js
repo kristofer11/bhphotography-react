@@ -24,7 +24,7 @@ const AboutPage = () => {
         <Row className='justify-content-center'>
           <Col md='8' lg='6'>
             <animated.div style={animatedStyle}>
-                <img width='100%' className='mainAboutImg' src={AboutMainImg}/>              
+                <img width='100%' className='mainAboutImg' src={AboutMainImg} alt='Brittany with husband.'/>              
             </animated.div>          
           </Col>
         <Row>

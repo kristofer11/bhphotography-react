@@ -124,7 +124,9 @@
 .landscapeMain
 {
   max-width: 100%;
+  height: auto;
   box-shadow: 6px 4px 4px #20494d;
+  
 }
 
 .featuredVideo,
@@ -132,7 +134,7 @@
 #mainHomeVid 
 {
   box-shadow: 6px 4px 4px #20494d;
-  max-width: 100%;
+  /* max-width: 100%; */
   height: auto;
 }
 
