@@ -29,7 +29,8 @@ const AboutPage = () => {
           </Col>
         <Row>
           <Col>
-            <h2 className='text-center my-3 greeting'>Meet <em><strong className='britName'>Brittany</strong></em></h2>
+            <h2 className='text-center my-3 greeting'>Meet <em><strong id='britName'>Brittany</strong></em></h2>
+            <hr />
             <p className='textContent'>Brittany has the Pacific Northwest home all her life. Spoiled by the majestic scenery, she spends as much time as she can experiencing and documenting all the region has to offer. On any given weekend you will find her exploring a mountain or beach with her husband, Jake, and two dogs, Genesis and Lola. Peruse her instagram and you will see her passion for landscape photography on display. Take in some of her YouTube videos and you will get a sense of her longing to know what there is to explore that can't be done from the ground.</p>
             <p className='textContent'>Fill out the form below to get in touch with Brittany or inquire about purchasing some of her work! She would love to hear from you.</p>
           </Col>

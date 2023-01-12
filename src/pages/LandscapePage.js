@@ -10,8 +10,9 @@ const LandscapePage = () => {
           <Col className="text-center">
              <img className='landscapeMain' src={LandscapeMainImg} />             
           </Col>
-      
         </Row>
+        <br />
+        <hr />
         <Row className='text-center'>
           <p className='textContent'>
           Images may only be used with permission. Please fill out the <a href='#'>contact form</a> to inquire about purchase.          

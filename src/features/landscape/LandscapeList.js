@@ -1,6 +1,5 @@
 import { Row, Col } from 'reactstrap';
 import { selectAllLandscapes } from './landscapeSlice';
-import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 import LandscapeModal from './LandscapeModal'
 
@@ -72,6 +71,7 @@ const LandscapeList = () => {
                     })
                 }
             </Row>
+
             {clickedImage && (
                 <LandscapeModal
                     clickedImage={clickedImage}

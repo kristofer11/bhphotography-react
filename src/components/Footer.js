@@ -8,7 +8,9 @@ import YoutubeLogo from '../app/img/icons8-youtube-logo-48.png'
 const Footer = () => {
   return (
         <footer className='site-footer'>
-            <Container>
+            <br />
+            <hr />
+            <Container className='pb-3'>
                 <Row className='text-center mt-3 justify-content-between'>
                     <Col className='mt-4'>
                         <a className='mx-2' href='https://www.instagram.com/brittanymarie818/?hl=en' target='_blank'>

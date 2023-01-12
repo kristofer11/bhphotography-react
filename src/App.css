@@ -24,15 +24,16 @@
 }
 
 .navbar-brand h1 {
-  font-family: 'Kaushan Script', cursive;
+  font-family: 'Dancing Script', cursive;  
   font-size: 1.88rem;
   font-weight: 900;
   color: #bc4416;
 }
 
-.britName {
+#britName {
   color: #bc4416;
-  font-family: 'Kaushan Script', cursive;
+  font-family: 'Dancing Script', cursive;  
+  font-weight:bolder
 }
 
 .greeting {
@@ -113,17 +114,28 @@
   background-color: #cbdbd988
 }
 
+.galleryContainer {
+
+}
+
+.galleryRow {
+  display: flex;
+}
+
 .galleryImg {
   border: 2px solid #cbdbd9;
   margin-bottom: 8px;
   border-radius: 2%;
   box-shadow: 6px 4px 4px #20494d;
+  aspect-ratio: 1/1;
+  object-fit: cover;
 }
 
 .mainAboutImg,
 .landscapeMain
 {
-  max-width: 100%;
+  width: 100%;
+  max-width: 1000px;
   height: auto;
   box-shadow: 6px 4px 4px #20494d;
   
@@ -157,7 +169,7 @@
   cursor:pointer;
 }
 
-.modal-dialog.droneModal {
+.modal-dialog {
   max-width: unset;
   background: transparent;
 
@@ -177,10 +189,6 @@
   border: unset !important;
 }
 
-.embed-responsive.embed-responsive-16by9 {
-  height: fit-content;
-}
-
 .droneModalBody {
   width:fit-content;
   height: fit-content;
@@ -193,18 +201,21 @@
   font-size: 2rem;
 }
 
-iframe.modalVideo {
-  max-width: 80vw;
-}
-
 .closeButtonDiv {
   text-align: left;
-  width: 560px;
-  max-width: 80vw;
+  width: 97vw;
+  max-width: 1100px;
 }
 
 .closeButtonDiv:hover {
   cursor: pointer;
+}
+
+iframe {
+  height: auto;
+  width: 95vw;
+  max-width: 1100px;
+  aspect-ratio: 16/9;
 }
 
 /* .droneContainer {
@@ -232,15 +243,10 @@ iframe.modalVideo {
   #homeCardTitle {
     font-size: 55px;
   }
-
-  nav {
+  .navbar {
     background-color: #cbdbd9;
   }
 }
-
-/* .galleryRow {
-  flex-direction: column
-} */
 
 /* Modal. "For those who code" on youtube was very helpful in styling this modal */
 .overlay {

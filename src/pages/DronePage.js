@@ -31,9 +31,10 @@ const DronePage = (id) => {
       <h1 className='text-center pageTitle'>Drone Video</h1>
       <Row>
         <Col>
-        <FeaturedVideo className='drone-main-vid' id='0' video={MainDroneVideo} poster={DronePagePoster} />        
+          <FeaturedVideo className='drone-main-vid' id='0' video={MainDroneVideo} poster={DronePagePoster} />
         </Col>
       </Row>
+      <hr />
       <p className='textContent'>Choose a video below or visit <a href='https://www.youtube.com/channel/UCVhJ3Q_sspghQcEg1dQxMag'>Brittany's YouTube Channel</a>.</p>
       <Row>
         <Col md='6' lg='4' className='mt-2' id='0' onClick={() => handleModalOpen(0)}>
@@ -58,17 +59,23 @@ const DronePage = (id) => {
           <DroneThumbnail thumbnail={SpringThumbnail} />
         </Col>
       </Row>
-      <div className='modalDiv'>
+      <div className='modalDiv' onClick={() => handleClose()}>
         {(currentVideoId != null) && (
-          <Modal isOpen='true' className='droneModal'>
-            <ModalHeader>
-              <div className='closeButtonDiv'><span className='modalCloseButton' onClick={() => handleClose()}>⨂</span> </div>  
-            </ModalHeader>
-         
+          <Modal isOpen='true' className='droneModal' backdrop={true} >     
+            <div className='closeButtonDiv'><span className='modalCloseButton' onClick={() => handleClose()}>🆇</span> </div>
             <ModalBody className='droneModalBody'>
-            <div class="embed-responsive embed-responsive-16by9">
-              <embed width="560" height="315" className='modalVideo' src={modalVideo} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></embed>
-            </div>
+              <div className="embed-responsive embed-responsive-16by9">
+                <iframe
+                  // width='560'
+                  // height='315'
+                  className='modalVideo'
+                  src={modalVideo} title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                >
+                </iframe>
+              </div>
             </ModalBody>
           </Modal>
         )}
