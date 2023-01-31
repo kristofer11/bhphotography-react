@@ -32,7 +32,7 @@ const LandscapeList = () => {
     }
 
     const handleRotationLeft = () => {
-        const totalLength = landscapes.length;
+        const totalLength = landscapes.length; 
         if (currentId === 0) {
             setCurrentId(totalLength - 1);
             const newImage = landscapes[totalLength - 1].image;
