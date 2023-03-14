@@ -1,4 +1,4 @@
-import { Container, Row, Col, Modal, ModalBody, ModalHeader } from 'reactstrap';
+import { Container, Row, Col, Modal, ModalBody } from 'reactstrap';
 import { useState } from 'react';
 import FeaturedVideo from '../components/FeaturedVideo';
 import MainDroneVideo from '../app/video/drone-page-main-vid.mp4';

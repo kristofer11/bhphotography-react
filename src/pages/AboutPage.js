@@ -40,11 +40,7 @@ const AboutPage = () => {
             <h2 className='text-center mt-2'>Contact</h2>
         </Row>
         <hr />
-        <Row>
-            <p className='textContent'>Whether it is to book a session or inquire about purchasing an image, I would love to hear from you! Please fill out the form to get in touch.</p>
-        </Row>
-        <hr />
-        <ContactForm />
+
     </Container>
   )
 }

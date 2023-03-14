@@ -218,20 +218,6 @@ iframe {
   aspect-ratio: 16/9;
 }
 
-/* .droneContainer {
-  justify-content:center;
-} */
-
-/* .droneModal {
-  width: 900px;
-} */
-
-/* .modalVideo {
-  aspect-ratio: 16/9;
-  width: 90vw;
-  justify-self: center;
-  height: auto;
-} */
 
 .galleryImg:hover {
   transform: scale(1.02);
