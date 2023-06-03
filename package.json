@@ -1,5 +1,5 @@
 {
-  "homepage": "http://kristofer11.github.io/bhphotography-react",
+  "homepage": ".",
   "name": "bh-photography-react",
   "version": "0.1.0",
   "private": true,
@@ -28,7 +28,6 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -53,7 +52,6 @@
     ]
   },
   "devDependencies": {
-    "firebase-tools": "^11.24.1",
-    "gh-pages": "^4.0.0"
+    "firebase-tools": "^11.24.1"
   }
 }
