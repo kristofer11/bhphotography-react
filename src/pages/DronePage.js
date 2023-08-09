@@ -13,76 +13,77 @@ import SkykomishThumbnail from '../app/img/skykomish-vid.png';
 import SpringThumbnail from '../app/img/spring-vid.png';
 
 const DronePage = (id) => {
-  const videos = DRONE_VIDEOS;
+    const videos = DRONE_VIDEOS;
 
-  const [currentVideoId, setCurrentVideoId] = useState(null);
-  const [modalVideo, setModalVideo] = useState(null);
+    const [currentVideoId, setCurrentVideoId] = useState(null);
+    const [modalVideo, setModalVideo] = useState(null);
 
-  const handleModalOpen = (id) => {
-    setCurrentVideoId(id);
-    console.log(currentVideoId);
-    setModalVideo(videos[id].source);
-  }
 
-  const handleClose = () => setCurrentVideoId(null);
+    const handleModalOpen = (id) => {
+        setCurrentVideoId(id);
+        console.log(currentVideoId);
+        setModalVideo(videos[id].source);
+    }
 
-  return (
-    <Container className='droneContainer'>
-      <h1 className='text-center pageTitle'>Drone Video</h1>
-      <Row>
-        <Col>
-          <FeaturedVideo className='drone-main-vid' id='0' video={MainDroneVideo} poster={DronePagePoster} />
-        </Col>
-      </Row>
-      <hr />
-      <p className='textContent'>Choose a video below or visit <a href='https://www.youtube.com/channel/UCVhJ3Q_sspghQcEg1dQxMag'>Brittany's YouTube Channel</a>.</p>
-      <Row>
-        <Col md='6' lg='4' className='mt-2' id='0' onClick={() => handleModalOpen(0)}>
-          <DroneThumbnail thumbnail={IndianBeachThumbnail} />
-        </Col>
-        <Col md='6' lg='4' className='mt-2' onClick={() => handleModalOpen(1)}>
-          <DroneThumbnail thumbnail={PacificThumbnail} />
+    const handleClose = () => setCurrentVideoId(null);
 
-        </Col>
-        <Col md='6' lg='4' className='mt-2' onClick={() => handleModalOpen(2)}>
-          <DroneThumbnail thumbnail={FallThumbnail} />
+    return (
+        <Container className='droneContainer'>
+            <h1 className='text-center pageTitle'>Drone Video</h1>
+            <Row>
+                <Col>
+                    <FeaturedVideo className='drone-main-vid' id='0' video={MainDroneVideo} poster={DronePagePoster} />
+                </Col>
+            </Row>
+            <hr />
+            <p className='textContent'>Choose a video below or visit <a href='https://www.youtube.com/channel/UCVhJ3Q_sspghQcEg1dQxMag'>Brittany's YouTube Channel</a>.</p>
+            <Row>
+                <Col md='6' lg='4' className='mt-2' id='0' onClick={() => handleModalOpen(0)}>
+                    <DroneThumbnail thumbnail={IndianBeachThumbnail} />
+                </Col>
+                <Col md='6' lg='4' className='mt-2' onClick={() => handleModalOpen(1)}>
+                    <DroneThumbnail thumbnail={PacificThumbnail} />
 
-        </Col>
-        <Col md='6' lg='4' className='mt-2' onClick={() => handleModalOpen(3)}>
-          <DroneThumbnail thumbnail={BarclayThumbnail} />
+                </Col>
+                <Col md='6' lg='4' className='mt-2' onClick={() => handleModalOpen(2)}>
+                    <DroneThumbnail thumbnail={FallThumbnail} />
 
-        </Col>
-        <Col md='6' lg='4' className='mt-2' onClick={() => handleModalOpen(4)}>
-          <DroneThumbnail thumbnail={SkykomishThumbnail} />
-        </Col>
-        <Col md='6' lg='4' className='mt-2' onClick={() => handleModalOpen(5)}>
-          <DroneThumbnail thumbnail={SpringThumbnail} />
-        </Col>
-      </Row>
-      <div className='modalDiv' onClick={() => handleClose()}>
-        {(currentVideoId != null) && (
-          <Modal isOpen='true' className='droneModal' backdrop={true} >     
-            <div className='closeButtonDiv'><span className='modalCloseButton' onClick={() => handleClose()}>🆇</span> </div>
-            <ModalBody className='droneModalBody'>
-              <div className="embed-responsive embed-responsive-16by9">
-                <iframe
-                  // width='560'
-                  // height='315'
-                  className='modalVideo'
-                  src={modalVideo} title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                >
-                </iframe>
-              </div>
-            </ModalBody>
-          </Modal>
-        )}
-      </div>
+                </Col>
+                <Col md='6' lg='4' className='mt-2' onClick={() => handleModalOpen(3)}>
+                    <DroneThumbnail thumbnail={BarclayThumbnail} />
 
-    </Container>
-  )
+                </Col>
+                <Col md='6' lg='4' className='mt-2' onClick={() => handleModalOpen(4)}>
+                    <DroneThumbnail thumbnail={SkykomishThumbnail} />
+                </Col>
+                <Col md='6' lg='4' className='mt-2' onClick={() => handleModalOpen(5)}>
+                    <DroneThumbnail thumbnail={SpringThumbnail} />
+                </Col>
+            </Row>
+            <div className='modalDiv' onClick={() => handleClose()}>
+                {(currentVideoId != null) && (
+                    <Modal isOpen='true' className='droneModal' backdrop={true} >
+                        <div className='closeButtonDiv'><span className='modalCloseButton' onClick={() => handleClose()}>🆇</span> </div>
+                        <ModalBody className='droneModalBody'>
+                            <div className="embed-responsive embed-responsive-16by9">
+                                <iframe
+                                    // width='560'
+                                    // height='315'
+                                    className='modalVideo'
+                                    src={modalVideo} title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen
+                                >
+                                </iframe>
+                            </div>
+                        </ModalBody>
+                    </Modal>
+                )}
+            </div>
+
+        </Container>
+    )
 }
 
 export default DronePage
