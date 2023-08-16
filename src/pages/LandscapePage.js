@@ -8,7 +8,6 @@ import { useState, useEffect } from 'react';
 const LandscapePage = () => {
     const [toggle, setToggle] = useState(false);
 
-
     const animatedStyle = useSpring({
         opacity: toggle ? 1 : 0,
         transform: toggle ? 'scale(1,1)' : 'scale(0.9,0.9)',
