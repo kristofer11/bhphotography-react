@@ -3,15 +3,11 @@
 Welcome to Brittany Herzog Photography, a website dedicated to showcasing stunning landscape photography and captivating drone videos captured in the beautiful Pacific Northwest.
 
 ![Brittany Herzog Photography Screenshot](./src/app/img/Screenshot%202023-02-28%20at%207.10.53%20PM.jpeg)
-
+git 
 ## Table of Contents
 - [About](#about)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Getting Started](#getting-started)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Acknowledgments](#acknowledgments)
 
 ## About
 
