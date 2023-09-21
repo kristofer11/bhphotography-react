@@ -12,7 +12,6 @@ Welcome to Brittany Herzog Photography, a website dedicated to showcasing stunni
 - [Installation](#installation)
 - [Usage](#usage)
 - [Acknowledgments](#acknowledgments)
-- [License](#license)
 
 ## About
 
